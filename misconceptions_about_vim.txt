@@ -1,0 +1,11 @@
+    Not vi
+    No gui
+    no syntax highlighting
+    no indenting
+    compiler/interpreter checking
+    harder to use (certainly just harder to learn)
+    no tag browsing
+    no fs browsing
+
+True:
+    Language awareness (refactoring)

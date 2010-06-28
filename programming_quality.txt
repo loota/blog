@@ -1,0 +1,41 @@
+While programming:
+    Update
+    Unit test, full
+    Typing skill
+    Good OOP and clean code
+    Autocomplete symbols
+    Check symbol names
+    Code only a bit at a time
+    Understand the code
+    Make note what the change might break
+
+Testing the program:
+    Syntax correctness lint
+    Strict syntax lint
+    Unit test
+    Automatic functional tests
+    Functional tests
+    Output validation
+    Debugger run
+
+Before committing to VCS:
+    Update
+    Unit test, full
+    Syntax correctness lint
+    Strict syntax lint
+    Automatic functional tests
+    Code difference review
+
+VCS postcommit hook:
+    Unit test, full
+    Syntax correctness lint
+    Strict syntax lint
+    Automatic functional tests
+    Code review notifying
+
+Testing the staging area:
+    Release to staging
+    Automatic functional tests
+    Functional tests
+    Output validation
+    Estimate change effect and notify QA

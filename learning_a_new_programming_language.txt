@@ -1,0 +1,21 @@
+Language:
+    Conditionals
+    Iterations and lists
+    Classes
+    Strings
+    External processes
+    Regex
+
+
+Environment:
+    IDE
+    Lint
+    Web FW
+    APIs
+    Application Servers
+
+Community:
+    Bloggers
+    IRC
+    Forums
+    Mailing lists
