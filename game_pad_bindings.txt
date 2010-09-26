@@ -1,5 +1,5 @@
 Vim:
-    Quit        Save       Taglist      Alt-Tab     Nohlsearch
+    Quit        Save       Taglist      Alt-Tab      Nohlsearch
     Back        PgUp       PgDn         Tag_Split    Forward
     Undo        Delete     Find_Up      Find_Down
 
