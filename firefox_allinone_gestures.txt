@@ -1,0 +1,14 @@
+Duplicate Tab	             DUD	
+Restore or Maximise Window   RU
+Full Screen	             RDLU
+Show my gestures in new tab  DRD
+Open new Tab in Foreground   U
+Open Links in Tabs	     +RUL
+View Page Source	     URD
+View Cookies	             LDR
+
+Copy URL to Clipboard
+
+Aio + drag scroll
+rocker->zoom in/out
+
