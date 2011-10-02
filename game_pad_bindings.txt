@@ -1,0 +1,14 @@
+Vim:
+    Quit        Save       Taglist      Alt-Tab      Nohlsearch
+    Back        PgUp       PgDn         Tag_Split    Forward
+    Undo        Delete     Find_Up      Find_Down
+
+Eclipse:
+    Close_Tab   Save       Open_In_Nav  Alt-Tab     Enter
+    Back_To_Nav PgUp       PgDn         Full_Screen Down
+    Undo        Delete     Copy         Paste
+
+Browsing:
+    Close_Tab   Back       Search_Bar   Alt-Tab     Enter
+    Back_Tab    PgUp       PgDn         New_Tab     Next_Tab
+    Undo        Delete     Copy         Paste

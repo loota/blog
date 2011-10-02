@@ -1,0 +1,37 @@
+# Belkin Nostromo N52te
+[Device:n52te]
+vendor=0x050d
+product=0x0200
+
+# We can assign mappings for specific LED statii by adding one or more LED_*
+# keywords to the end of the section header, each preceded by a plus.
+## The n52's #06 key should print 'red' in red-mode
+#[Map:n52te + LED_NUML]
+#KEY_CAPSLOCK: KEY_R, KEY_E, KEY_D 
+
+[Map:n52te]
+#Upper row
+KEY_TAB:KEY_LEFTCTRL + KEY_W
+KEY_Q:KEY_LEFTCTRL + KEY_D
+KEY_W:KEY_LEFTCTRL + KEY_K
+KEY_E:KEY_TAB
+KEY_R:KEY_ENTER
+
+#Middle row
+KEY_CAPSLOCK:KEY_LEFTCTRL + KEY_PAGEUP
+KEY_A:KEY_PAGEUP
+KEY_S:KEY_PAGEDOWN
+KEY_F:KEY_LEFTCTRL + KEY_PAGEDOWN
+KEY_D:KEY_LEFTCTRL + KEY_T
+
+#Lower row
+KEY_LEFTSHIFT:KEY_LEFTCTRL + KEY_Z
+KEY_Z:KEY_DELETE
+KEY_X:KEY_LEFTCTRL + KEY_C
+#
+
+#Pad
+KEY_LEFT:KEY_LEFTCTRL + KEY_LEFTSHIFT + KEY_LEFT
+KEY_UP:KEY_LEFTCTRL + KEY_LEFTSHIFT + KEY_UP
+KEY_RIGHT:KEY_LEFTCTRL + KEY_LEFTSHIFT + KEY_RIGHT
+KEY_DOWN:KEY_LEFTCTRL + KEY_LEFTSHIFT + KEY_DOWN
