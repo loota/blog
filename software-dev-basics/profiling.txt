@@ -1,0 +1,16 @@
+Look for the "total" share
+
+Looking at profiler output one usually needs to look at the "total" shares. This
+means the amount of time the program spends in that routine and the other
+routines it calls. After looking at enough of the routines that have a high
+"total" share, the programmer has a good idea which routines are at fault. At
+the bottom there might be the routines that have a high "self" share, or there
+just might be a lot of calls to routines that don't take all that long. In the
+former case, optimizing those routines may result in tremendous improvement.
+Either way, reducing the amount of routine calls that have a high "total" share often
+result in good results.
+
+It is quite useful to use a tool that draws boxes and arrows, showing the
+results graphically.
+
+Code Complete (chapter 25)

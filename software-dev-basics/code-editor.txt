@@ -1,0 +1,25 @@
+Using advanced features make code editing much more comfortable, faster and
+safer. Try to find out about the capabilities of your code editor. Some of the
+advanced features editors provide are:
+
+ * indent a visually selected range
+ * commenting a visually selected range
+ * deleting a line
+ * deleting a string inside quotation marks
+ * searching for a string under cursor
+ * searching with a regex
+ * searching and replacing
+ * completing a partial symbol
+ * jumping to the definition of a class or a method
+ * refactoring, that is, completely changing the design of code to another one,
+   yet preserving its behavior
+
+
+Vim (index.txt)
+Emacs
+Eclipse
+IntelliJ IDEA
+Pragmatic Programming
+Code Complete
+Bram Moolenaar's 7 Habits of Effective Editing
+Stack Overflow: Text editor tricks

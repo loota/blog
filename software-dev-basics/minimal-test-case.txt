@@ -1,0 +1,11 @@
+Finding a minimal test case
+
+This is something that someone will probably have to do anyway at some point and it
+is often easiest when the problem and the situation is fresh in your mind.
+Many problems surface far from where they really originate. Try to isolate the
+cause, trying just a few of the first or last steps you used. Leave out some
+optional steps. Use different data. Be creative.
+
+Testing Computer Software
+Code Complete?
+Spolsky?

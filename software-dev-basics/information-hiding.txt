@@ -1,0 +1,29 @@
+Centralized control
+
+It is often good to assign a certain responsibility to a single portion
+(variable, constant, function, method, class, etc.) of a program.
+That one entity then becomes the authoritative source for that responsibility
+and it hides the way of finding out that piece of information from the rest of
+the system. The classic example is to have a numeric value in a named constant
+defined in one place, then used elsewhere by the name of the constant instead of
+spreading the number all over the code.
+
+A more advanced example is a program having a method which provides the input to
+the program. All other parts of the program use this method to see the input and
+none of them know where it comes from. The only one method which knows how to
+get it might get it from standard input stream, and if it were required, it
+would be very easy to change it to take the input from a file.
+
+The benefits of it are:
+ * changing this information is simple and easy to test
+ * finding the information is easier, provided that the location of it is
+   logical
+ * every validation check and filtering made on the information is in one place
+
+Code duplication is the alternative, which is often deemed detrimental to software development.
+
+The Art of Unix Programming (SPOT rule)
+Code Complete
+Parnas
+Mythical Man-month
+Pragmatic Programming

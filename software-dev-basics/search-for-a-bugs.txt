@@ -1,0 +1,9 @@
+Try at least a few keywords in the bug tracker search.
+
+Try to look at version control history. Commit comments might contain keywords
+that the bug tracker doesn't.
+
+Also try other information sources, like wikis and files on shared network drives.
+
+Asking around will interrupt other team members and take some of their time, but
+not finding the required information might take more of their time. 

@@ -1,0 +1,18 @@
+Do not state obvious things. For communicating what the code does, use
+meaningful names for variables, routines, classes and other symbols. Structure
+the program properly and design good abstractions for information hiding.
+
+Comments are needed when you need to state the intent of the code. Spell out why
+the code is done the way it is. 
+
+Comments are also useful in explaining blocks of code that are not enclosed
+inside routines for some reason. For instance, a complicated algorithm
+might be wise to keep as a whole in one routine, but some of its parts might
+require comments that might give a useful overview. 
+
+Legacy code might be risky to refactor and comments can then be used to good
+effect with minimum risk.
+
+Javadoc-style document comments are generally considered good practise.
+
+Code Complete (chapter 

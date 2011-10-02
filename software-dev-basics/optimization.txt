@@ -1,0 +1,36 @@
+Measure, profile and analyze the negative sides.
+
+Programmers often guess wrong where the problems in a program are so it is
+paramount to measure and use a profiler to find about problems.
+
+Measure first to make sure that there really is a problem. Always measure
+several times to negate the effects of possible caching, network latency etc.
+Then use a profiler to find out where the actual problem is.  Do a quick
+optimization, if it's hard you might even just comment out the problem spot, and
+then measure again to make sure that optimizing will actually do something good.
+If it does, analyze how long will the proper optimization take, how much it will
+break things, how will it affect maintenance and how will it affect the rest of
+the system.
+
+If the fix actually improves maintenance I wouldn't consider it an optimization,
+rather I'd consider it good design which also optimizes.
+
+There might also be options to optimizing, which the developer should consider
+and possibly ask someone else about. Some of the options are altering the
+functionality, removing it altogether, or just letting the functionality be a
+resource hog.
+
+Profiler should be used, but if one is not available, at least low tech means
+like a stopwatch and ending the program at certain points should be used to get
+at least some measures.
+
+The possible negative sides of a bad optimization is that the program loses a
+fair share of its maintainability, the optimizing programmer and the testers
+spend a lot of time and the optimization doesn't actually fix any problem. All
+of these concerns should be attended to.
+
+References:
+Code Complete (chapters 24 and 25)
+Effective Java 2nd
+Wikipedia
+Portland

@@ -1,0 +1,66 @@
+First search the bug database in case the bug already exists.
+
+Keep the report short and to the point. Include additional information in
+attachments or divide the report to two parts, the first one simple explanation
+and the latter one containing abundant information.
+
+Three things are of extreme importance while reporting:
+ * what you did
+ * what happened
+ * what should have happened
+
+Stating these enable the next reader to reproduce it, which is of utmost
+importance. The bug can't be corrected if it can't be reproduced. 
+
+It will almost always save time to find a minimal test case that reproduces the
+problem. Try to repeat the same actions but leave out possible optional steps
+and try things in different order.
+
+Value unambiguous reports over ones using good language. For instance, repeating
+the same word many times in one sentence might be bad language, but if it
+clarifies the report it is perfectly acceptable. 
+A bad example:
+ * The program started slowing down and the window froze, after which it
+ * crashed.
+A good example
+ * The program started slowing down and the window froze, after which the window
+ * crashed. 
+
+Note how the bad example seems like it uses the language better but it might
+lead someone to think that the whole program crashed, which didn't happen.
+
+Do not make unjustified generalizations.  
+ * Bad:
+  This happens with all windows.
+ * Good:
+ This happened while using window A and window B.
+
+Note that the good example doesn't state any assumptions about other areas
+of the system, and only expresses what did happen.
+
+Some things will sound obvious but do state them in the report if there's a
+chance for misunderstanding.
+
+Keep in mind that those reading the report may not have the same knowledge about
+the system as you or the report might be read months from now. It might be read
+in an extreme hurry while attempting to find out a problem in production or it
+just might be read by someone working extremely long hours in a near-vegetative
+state who therefore has a very high risk of misunderstanding matters.
+
+If there are URIs, include them. Even if it is obvious where to find things, it
+might not be obvious two months from now, or to someone just learning the
+system. Even if the URI is the result from a redirection and no longer points to
+correct location, it is better to have one than not. Note that a filesystem path
+is also a URI.
+
+If there are logs available, check them and include possible information
+about the issue.
+
+Assess the severity of the problem, this list is from high severity to low:
+ * does it make it impossible to complete a task?
+ * does it make the task more difficult?
+ * does it make the program look unprofessional?
+ * does it cost time or resources from other people?
+
+Spolsky <artikkeli>
+<Google-haun osuma>

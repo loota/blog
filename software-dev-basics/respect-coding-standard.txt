@@ -1,0 +1,8 @@
+Coding standard usually has a few reasons for existing:
+
+1) It makes the code look more consistent and thus the bugs easier to find.
+
+2) It rules out practices that might be dangerous, especially to less
+experienced programmers.
+
+Code Complete

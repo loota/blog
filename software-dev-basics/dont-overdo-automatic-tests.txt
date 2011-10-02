@@ -1,0 +1,10 @@
+Automatic tests, both unit and functional, are great. They make your goals clear
+and help with your development and are probably the cheapest way to do
+regression testing. Yet you can waste enormous amounts of time by trying to make
+them test everything right away, particularly with hard to test legacy systems. 
+Kent Beck says in TDD that in one case he wrote four tests where a human
+professional tester wrote more than seventy.
+
+JUnit
+PHPUnit
+TDD

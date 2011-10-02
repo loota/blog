@@ -1,0 +1,54 @@
+Binary search
+
+Very often the most recent change has caused a problem and this is easily checked with a
+blame or annotation feature of the VCS, which should be usually the first thing
+you do.
+
+The binary search is basically you wanting to find a revision, which is the
+first non-working revision between a working revision and a non-working one.
+
+If the problem goes further than that, the cause must be found by digging
+deeper. Right now you probably have a non-working revision in your hands so pick
+a revision from a date you think should work. If it doesn't, pick a revision
+from further back. Continue this until you find a working revision. Then look
+at halfway between this working revision and the non-working revision. If the
+one at halfway doesn't work, look at the one halfway between this and the
+non-working revision. 
+
+If it does, look at halfway between this and the working revision. Continue
+doing this until you find the cause.
+
+
+Example:
+
+    1.10  (here we found out that it's not working)
+     *
+     *
+    1.9
+     *
+     *
+    1.8                          (this doesn't work, so the cause is 1.7)
+     *
+     *
+    1.7
+     *
+     *
+    1.6           (first look here. It works, so proceed to 1.8)
+     *
+     *
+    1.5
+     *
+     *
+    1.4
+     *
+     *
+    1.3
+     *
+     *
+    1.2   (we know this revision works)
+
+Some version control systems have tools for this, for instance, git-bisect.
+
+Code Complete
+git-bisect
+Debugging
