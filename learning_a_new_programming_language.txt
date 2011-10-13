@@ -19,3 +19,17 @@ Community:
     IRC
     Forums
     Mailing lists
+
+
+
+
+String handling:
+
+    string concatenation
+    string replace
+    acquiring of substrings
+
+    upper casing string
+    upper casing the first character in a string
+
+    regex

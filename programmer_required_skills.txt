@@ -2,36 +2,41 @@ What I've read on the Internet, software developers are the lowest cast of
 employees. According to various managers, database administrators, system
 administrators, user interface specialists, quality assurance staff, users and
 especially other programmers, software developers are inadequate at best
-and require much more education. Naturally we also tend to chastise ourselves
+and require much more education. Naturally we programmers also tend to chastise ourselves
 for our shortcomings.
 
 Here's some:
 
-DBA: *cough* developers didn't normalize the table
-Spolsky: Absolute minimum about Unicode
-Atwood & Spolsky: Usability
-Yegge, Atwood, Spolsky: Reading list
-Spolsky: Technical writing for devs
-Any security break-in: Lazy dev
+ - What every programmer needs to know about memory
+ - 100 vim commands every programmer should know
+ - DBA: *cough* developers didn't normalize the table
+ - Spolsky: Absolute minimum about Unicode
+ - Spolsky: Error message writing for devs ?
+ - Atwood & Spolsky: Usability
+ - Yegge, Atwood, Spolsky: Reading list
+ - Any security break-in: Lazy dev
 
 This drove me to actually spell out what a regular programmer should know at
 minimum. I'm using a measure of theorical knowledge of my own invention, Average
-Book Equivalent (ABE), which amounts to book of about 250 pages of length.
+Book Equivalent (ABE), which amounts to a book of about 250 pages of length.
+That is, Pragmatic Programming (~300 pages) would take 1 and Code Complete (~900 pages) would take 4.
+And even tho it uses a book's worth as a measure, it doesn't really matter where
+the knowledge is gained from; for instance, blogs, magazines, conversations, experimentation.
 
-Here's what a software developer should know:
-    4 Programming
-    2 Advanced Programming (GoF)
+Here's what I've come to understand a software developer should know:
+    2 Programming
+    2 Advanced Programming (GoF, PoEAA)
     2 Professional Programming (Code Complete, Pragmatic Programmer, Clean Code)
     1 Unit testing (TDD)
     1 Regular Expressions (Owl)
     1 IDE
     1 VCS
     3 Security (Writing Secure Code)
-    3 Databases and SQL
+    2 Databases and SQL
     1 Application Servers
     1 Build Programs
-    3 Shell
-    4 Algorithms and data structures
+    1 Shell
+    2 Algorithms and data structures
     2 Concurrency
     1 Usability
     1 Character Encoding
@@ -59,8 +64,6 @@ In addition to those, a software developer should continuously learn at least ab
 
 
 That's 48 ABEs and about one 1 additional ABE each year to get up to date.
-You'll probably also need to actually apply that knowledge to retain it, which
-will demand even more time.
 
 I've understood that the vast majority of these items are seldom touched by formal
 education and that few companies allow the developers to study even one book's
@@ -69,61 +72,63 @@ worth on company time.
 I am of the opinion that this list is a bit too much and redundant.
 
 Don't get me wrong. I find it enjoyable to learn about these matters, even
-extensively. I also think that software developers should be aware of those, but
+extensively. I also think that software developers should be aware of these, but
 that is definitely not a book or four about one item. What bugs me is that
-people think every software developer *is supposed* to have an *extended*
-understanding of each of those domains. 
+people think every software developer is supposed to have an *extended*
+understanding of each of these domains. 
 
 I might be looking at the world with the eyes of an application level developer
 but as we require the developers to become adept at things like character
 encodings, usability and algorithms they don't have time to learn about things
-they use daily, like their IDE and VCS. The aforementioned are important things
+they use daily, like their IDE and VCS, or object-oriented design. The aforementioned are important things
 but often it would be enough if only a couple of members in the team would
 know about those. I might even go so far as to even consider algorithms,
 beyond basic O-notation understanding, to be domain knowledge for
 lower-level programming. Just as well the basics of HTTP are good to know
 but extended knowledge is required by the tasks of relatively few
-programmers.
+programmers, not to mention TCP. 
+
+This can of course easily be reversed as lower level programmers might not need
+some knowledge required in application level.
 
 I'm under the impression that some software companies divide responsibilities to
 people differently, having some of the programmers work as release engineers,
 some as network programmers, some as front-end programmers doing UI,
-I18n, technical writing etc. This I find an excellent way of dividing work.
+others doing I18n, some technical writing etc. This I find an excellent way of dividing work.
 
-What I'd see as being paramount for a programmer follows:
-    4  Programming
+What I'd see as being important for any programmer follows:
+    2  Programming
     2  Advanced Programming
     2  Professional Programming
     1  IDE
     1  VCS
     1  Communication
-    2  Software projects
+    2  Software project overview
 
 Of course, a developer should have a few blog posts' worth of knowledge about the other items on the
 previous list, too.
 
-But isn't that much better? There's only about 13 books to read in order to become a
-productive programmer, and one can concentrate on the important matters. Of
-those, I gather that schools generally even teach the basic programming and communication
-so you only have about 8 additional books to learn to be an accepted member of
-the team.
+There's only about 13 ABE's to read in order to become a productive programmer,
+and one can concentrate on the important matters. Of those, I gather that
+schools generally even teach the basic programming and communication so you
+only have about 8 additional books to learn to handle the basics.
 
-If I had any power around here, I'd make developers learn 
-    1) about these items profoundly 
+If I had any power around here, I'd make developers
+    1) learn about these items profoundly 
     2) know a little about everything on the longer list
     3) specialize in some of the items on the longer list.
     
 That way, you'd have a team with every member knowing the important matters for
-daily developing as well as having all the niche areas covered.
+daily developing and have the team possess knowledge in all the important areas.
 
 I present an example for a team working with a PHP web application with Zend
-Framework running on Apache hosted on Debian Linux and released with Ant
-leveraging Postgres database, using Vim as their standard IDE, Git as VCS and
-Linux with KDE as the workstation platform.
+Framework running on Apache, hosted on Debian Linux and released with Ant.
+The application uses a Postgres database and the team is using Vim as their
+standard IDE, Git as VCS and Linux with KDE as the workstation platform.
 
-Every developer has approximately the following knowledge:
+Every developer has at least approximately the following knowledge:
     A book on PHP, basic
-    A book on PHP, advanced (how to move a file to another server)
+    A book on PHP, advanced (things like how to move a file to another server)
     A book on OOP
     Design Patterns
     Code Complete
@@ -133,17 +138,17 @@ Every developer has approximately the following knowledge:
 
 In addition to these:
 
-programmer A would read (front end):
+programmer A (front end):
     A book on HTTP
     A book on CSS
     JavaScript: The Good Parts
     Mootools Essentials
     Zend Framework In Action
     A book on usability
-    I18n
+    A book on I18n
     A book on technical writing
 
-programmer B would read (components):
+programmer B (components):
     A book on bash
     A book on ant
     A book on apache
@@ -156,7 +161,7 @@ programmer C (QA programmer):
     Refactoring
     Pragmatic Programmer
 
-programmer D (data mapping):
+programmer D (data):
     A book on Postgres DB and SQL
     A book on XML
     Patterns of Enterprise Application Architecture
@@ -181,37 +186,22 @@ programmer G (tools):
 
 With this setup, you'd of course have new programmers come in needing to
 learn a lot. But the difference to the regular everyone-knows-everything-setup
-is that there's someone who takes pride in knowing just some of the items and
+is that there's someone who takes pride in knowing just some of the items. And
 there's someone who will actually know how to create that shell script to remove
 files that are older than 5 days and 3 hours, owned by someone else than web
 server user and have no write permissions for users in the same user group. And
-that who also knows how to create it fast.
+that is the one who also knows how to create it fast.
 
-Only 1 in 6 knows about SQL and databases? Sure, remember that everyone knows a
-little about that too. Besides, these are modern times and we have a lot of tricks to hide the
-SQL from the code. Data mappers, gateways, ORM's, document databases etc. 
+Only 1 in 7 knows about SQL and databases? Keep in mind that everyone
+knows something about those too. Everyone would know how to select rows, do
+joins and how to normalize a table into third normal form. And these are modern
+times and we have a lot of tricks to hide the SQL from the code. Data mappers,
+gateways, ORM's, document databases etc. 
 
 For example, I read the Friedl's regex book and I use regex while programming a
-lot mostly to find, replace or highlight some text in my text editor (Vim).
+lot, mostly to find, replace or highlight some text in my text editor (Vim).
 Still, I'm not a real expert on regex. I sometimes need to check up the rules on things
 like lookbehinds. I think it would be more time-efficient generally if I'd have
 someone on the team I could ask a complicated regex from ("I want to match baz
 or bar, but only if they are not preceded by a foo and two to three digits") and it would be
 delivered promptly. That's just so rarely needed that every developer shouldn't have to know it.
-
-I hereby also recommend my learning list for a developer:
-    Go through the long list and learn from a couple of blog articles about those
-    Code Complete
-    Design Patterns
-    Book about OOP
-    Book about your favorite IDE (Vim)
-    Book about your favorite VCS (Git)
-    Book about software projects
-
-My recipe for making the software world a better place today is: please don't
-require ever more reading from the developer. Don't make him feel bad if he
-lacks some knowledge in the long list I've shown here. The poor codemonger knows
-quite a lot, can not know everything and the responsibility as well as the
-credit should not be only his but the managers', QA staffs', writers' etc.
-In other words, the team's.
-
