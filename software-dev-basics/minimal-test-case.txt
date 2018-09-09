@@ -5,6 +5,25 @@ is often easiest when the problem and the situation is fresh in your mind.
 Many problems surface far from where they really originate. Try to isolate the
 cause, trying just a few of the first or last steps you used. Leave out some
 optional steps. Use different data. Be creative.
+=======
+This is something that someone will probably have to do anyway at some point and
+finding the minimal steps for an issue is often easiest when the problem and the
+situation is fresh in your mind. If you find a bug, use at least a little time
+to try to find out a minimal test case.
+
+Many problems surface far from where they really originate and even bugs that
+seem obvious might actually be caused by something completely different. Here
+are some tips to find out the cause:
+* try to isolate the cause, trying a few of the first or last steps you used
+* if there's a lot of steps, try the first half. If the problem was found, split
+  that half into further two halves, and repeat until the minimal case is found
+* leave out some steps which seem optional
+* use different data
+* in case it's really hard to reproduce, force it to fail. Do whatever you have
+  to, but reproduce the same error. Most of the time, this will teach you
+  something about the software.
+* use automatic data fuzzying tools
+* in general, be creative
 
 Testing Computer Software
 Code Complete?

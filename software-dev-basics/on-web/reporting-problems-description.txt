@@ -1,0 +1,28 @@
+While describing problems, value unambiguous reporting over using good
+language. For instance, repeating the same word many times in one sentence might
+be bad language, but if it clarifies the report reiteration is perfectly acceptable. 
+A bad example:
+ * The program started slowing down and the window froze, after which it
+ * crashed.
+A good example
+ * The program started slowing down and the window froze, after which the window
+ * crashed. 
+
+Note how the bad example seems like it uses the language better but it might
+lead someone to think that the whole program crashed, which didn't happen.
+
+Do not make unjustified generalizations.  
+ * Bad:
+  This happens with all windows.
+ * Good:
+ This happened while using window A and window B.
+
+Note that the good example doesn't state any assumptions about other areas
+of the system, and only expresses what did happen.
+
+Some things will sound obvious but do state them in the report if there's a
+chance for misunderstanding.
+
+Keep in mind that those reading the report may not have the same knowledge about
+the system as you and the report might be read months from now, in a hurry, while
+fixing a production issue or by someone working long hours.

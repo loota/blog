@@ -1,0 +1,16 @@
+Search with at least a few keywords using the issue tracker search. Good keyword
+choices are parts of error messages, names of components and verbs describing
+what you were trying to do.
+
+Check logs for similar error messages and try to search for those.
+
+Search the version control history. Commit comments and branch names might
+contain keywords that the bug tracker doesn't.
+
+Also try other information sources, wikis, emails, instant message history and
+files on shared network drives.
+
+Asking around is probably one of the most efficient methods of finding possible
+previous bugs even though it will interrupt other team members and take some of
+their time. However, not finding the required information might take more of
+your and their time in the future. 

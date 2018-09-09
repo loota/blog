@@ -1,0 +1,41 @@
+First search the problem tracking database in case a previous report of the issue already exists.
+
+Write a good summary. Keep in mind that people often look at lists of dozens of
+problems so the summary must be short yet make the issue stand out from other
+issues.
+
+Keep the report short and to the point. Include additional information in
+attachments or divide the report to two parts, the first one simple explanation
+and the latter one containing abundant information.
+
+Three things are of extreme importance while reporting:
+ * what you did
+ * what happened
+ * what should have happened
+
+Stating these enable the next reader to reproduce it, which is of utmost
+importance since the problem can't be corrected if it can't be reproduced. 
+
+It will probably save time to find a minimal test case that reproduces the
+problem. Try to repeat the same actions but leave out possible optional steps
+and try things in a different order.
+
+If there are URIs involved such as web URLs or filesystem paths, include them. Even if it
+is obvious how to find the problem, it might not be obvious two months from now or
+to someone just learning the system. Even if the URI is the result from a
+redirection and no longer points to correct location, it is better to have one
+than not.
+
+If there are logs available, check them and include possible information
+about the issue.
+
+Assess the severity of the problem:
+ * is the problem already visible to clients?
+ * does it make completing a task impossible?
+ * does it make completing a task more difficult?
+ * does it cause failures in other areas?
+ * does it make the program look unprofessional?
+ * does it cost time or resources from people?
+
+Spolsky <artikkeli>
+<Google-haun osuma>

@@ -1,0 +1,50 @@
+Before implementing an optimization:
+* measure
+* profile
+* analyze the negative sides the optimization will cause
+
+Programmers often guess wrong where the problems in a program are so it is
+paramount to measure and use a profiler to find about problems.
+
+Measure first to make sure that there really is a problem. Always measure
+several times to negate the effects of possible caching, network latency etc.
+
+Then use a profiler to find out where the actual problem is. Verify the problem
+area by doing a quick optimization. If it's hard to implement, merely comment
+out the problem functionality, and then measure again to make sure that optimizing will
+actually do something good. 
+
+If it does, estimate 
+* how long will the proper optimization take
+* how much it will break things
+* how will it affect maintenance
+* how will it affect the rest of the system.
+
+If the fix actually improves maintenance I wouldn't consider it an optimization,
+I'd rather consider it good design which also happens to optimize.
+
+There are alternatives to optimizing such as 
+* altering the functionality
+* removing it altogether
+* letting the functionality be a resource hog.
+
+Profiler should be used, but if one is not available, use at least low tech means
+like a stopwatch and ending the program at certain points to get
+some measures.
+
+Optimizing shouldn't be taken lightly since the program loses a part of its
+maintainability and the optimizing programmer and QA spend a lot of time on the
+issue.
+
+Optimizations also often depend on the inner workings of libraries, so they often
+break after updating those. To check for this, optimizations should be
+tested and measured again after updates.
+
+There's also the risk that the optimization doesn't actually fix the problem,
+which should be verified by measuring again after deploying. 
+
+References:
+Code Complete (chapters 24 and 25)
+Effective Java 2nd
+Wikipedia
+Portland

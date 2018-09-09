@@ -1,0 +1,18 @@
+Estimates are very important even though they often are not accurate. They
+are almost always much better than nothing.
+
+Slice the work into smaller parts and try to estimate these separately.
+
+Use data from earlier work to see how long similar tasks have taken and
+use that as the base for the estimate.
+
+If the estimate is difficult, try to at least estimate a range. "3 to 10 hours" is a
+much better estimate than "I have no idea".
+
+You can also use software designed to help with estimation.
+
+Estimating skills improve with practise. Observe how accurate the estimates
+have been and refine your estimates.
+
+Pragmatic Programming
+Rapid Development

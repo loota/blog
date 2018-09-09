@@ -1,0 +1,72 @@
+Overall
+
+All code metrics are crude.
+Most are based on science.
+Most are politically loaded.
+
+Cyclomatic complexity
+
+The sum of all decision points in the program
+
+Examples:
+CC 1
+if (1){
+}
+CC 2
+if (2) {
+}
+
+Npath complexity
+
+The number of all decision paths in a program
+
+Examples:
+Npath 4
+if (1) {
+}
+if (2) {
+}
+
+Npath 8
+if (1) {
+}
+if (2) {
+}
+if (3) {
+}
+
+Fan-in
+
+How many components this component uses. This makes the component dependent on
+many other components, so a big fan-in is not recommended.
+
+
+Fan-out
+
+How many components use this component. Components with a lot of fan-in need to
+be well-tested and stable.
+For example, library and framework components have a big fan-in.
+
+SLOC
+
+Source lines of code. Does not include comments or empty lines.
+
+Test coverage
+
+Number of lines that automated tests execute.
+
+CRAP
+
+Relation of cyclomatic complexity to test coverage
+
+Routine length
+
+(Routine in this context means function, procedure or method)
+There have been some studies about the proper lenght of a method, but nothing
+really conclusive.
+
+Short routines are generally favored.
+
+Depth of inheritance
+
+7

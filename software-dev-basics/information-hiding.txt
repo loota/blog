@@ -22,6 +22,45 @@ The benefits of it are:
 
 Code duplication is the alternative, which is often deemed detrimental to software development.
 
+=======
+It is usually a good practice to assign a certain responsibility to a single
+point of a program (variable, constant, function, method, class, etc.). That
+one entity then becomes the authoritative source for that responsibility and
+it's the only one which shows a piece of information, and hides the true
+way of finding out that piece of information from the rest of the system. This
+allows changing the information in only one place because every operation that
+fetches this information must go through this one central place.
+
+The classic example is to have a numeric value in a named constant defined in
+one place, then used elsewhere by the name of the constant instead of spreading
+the number all over the code. Having the literal number in several places often
+leads to the number being changed in just one place, when it should really be
+changed in all the places. This usually also results in more readable code.
+
+A more advanced example is a program having a method which provides the input to
+the program. All other parts of the program use this method to see the input and
+none of them know where it comes from, other than that this method provides it.
+The only one method which knows how to get it might get it from standard input
+stream, and if it were required, it would be very easy to change it to take the
+input from a file.
+
+If the other parts of the program were getting the input directly from the
+standard input stream, changing them to start getting their input from files
+would require a change in every single one of these parts thus increasing the
+chance for defects by a programming error, increasing the chance for some parts
+to be mistakenly left unchanged and finally requiring more testing. 
+
+The benefits of hiding information are:
+ * changing of the information is simple and easy to test
+ * finding access to the information is easier (there is only one way to do it)
+ * every validation check and filtering made on the information is in one place
+ * centralized access usually documents the information well (e.g. routine or variable name)
+
+The alternative to information hiding is code duplication, which is often deemed
+detrimental to software development.
+
+Shotgun change
+>>>>>>> Unknown things made years ago
 The Art of Unix Programming (SPOT rule)
 Code Complete
 Parnas

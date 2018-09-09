@@ -5,4 +5,14 @@ Coding standard usually has a few reasons for existing:
 2) It rules out practices that might be dangerous, especially to less
 experienced programmers.
 
+=======
+1) Make the code look more consistent and thus make the bugs easier to find.
+
+2) Rule out practices that might be dangerous, especially to less
+experienced programmers.
+
+3) Remove a redundant decision making process.
+
+4) Reduce the amount of time spent discussing coding style.
+
 Code Complete

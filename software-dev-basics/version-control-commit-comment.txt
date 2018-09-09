@@ -1,0 +1,37 @@
+What to comment
+
+Commit logs are mostly used when trying to get an overview about changes and
+when searching for the cause of problems. Therefore comment about the reasons
+for the change and summarize the change. It is not important to describe the
+code changes accurately since there is a possibility to see a diff of the
+commit.
+
+Summary, compact
+
+Summarize the commit in 50 characters. If there's more you wish to comment
+insert an empty line and then add detailed description.  A short summary is
+important because it makes it easier to browse logs of commits. A human being
+can effectively use only a little amount of display space and many tools show
+logs in a compact fashion.
+
+Issue tracking
+
+Issue trackers often integrate with version control systems via commit comments
+and they usually require an id of an issue in the commit comment for this
+integration to work. Even if there isn't this kind of integration, adding an
+issue tracker id in the commit comment helps to make the change more traceable.
+
+Tense
+
+In commit comments, present tense is often the favored form.
+
+Example of a good commit comment:
+
+"Add check for configuration file not existing
+
+The user could remove the configuration file and the program would then crash
+during startup. The crash message included sensitive information and was a
+security vulnerability."
+
+dontwriteramblingcommitmessages
+git help

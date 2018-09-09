@@ -1,0 +1,62 @@
+Binary search
+
+Very often the most recent change has caused a problem and this is easily
+checked with a blame or annotation feature of the VCS, which should usually be
+the first thing you do. However, sometimes the cause lies deeper within the
+history.
+
+The binary search is basically finding the revision which is the first
+non-working one.
+
+Right now you probably have a non-working revision in your hands so pick
+a revision from a date you think should work. If it doesn't, pick a revision
+from further back. Continue this until you find a working revision. Then look
+at halfway between this old working revision and the current non-working revision
+(this revision at the halfway will be called the "first halfway revision" in this
+document).
+If the first halfway revision doesn't work, look at another revision halfway
+between the first halfway revision and the old working revision.
+
+But if the first halfway revision did work, look at halfway between this and the
+current non-working revision. 
+
+Continue looking at halfway between known revisions until you find the cause.
+
+
+Example:
+
+1.             1.10  (this revision is not working)
+                *
+                *
+               1.9
+                *
+                *
+        4.     1.8         (this doesn't work, so the cause must be either this or 1.7)
+                *
+                *
+            5. 1.7           (this one works, so the cause is 1.8)
+                *
+                *
+     3.        1.6       (this works, so the problem came later than this. Proceed to check 1.8)
+                *
+                *
+               1.5
+                *
+                *
+               1.4
+                *
+                *
+               1.3
+                *
+                *
+  2.           1.2     (we verify that this revision works)
+                *
+                *
+               1.1
+
+Some version control systems have tools for binary searching problem, e.g. git-bisect.
+
+Binary search algorithm
+Code Complete
+git-bisect
+Debugging

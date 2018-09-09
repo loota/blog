@@ -1,10 +1,44 @@
+<<<<<<< HEAD
 Automatic tests, both unit and functional, are great. They make your goals clear
 and help with your development and are probably the cheapest way to do
 regression testing. Yet you can waste enormous amounts of time by trying to make
 them test everything right away, particularly with hard to test legacy systems. 
 Kent Beck says in TDD that in one case he wrote four tests where a human
 professional tester wrote more than seventy.
+=======
+Automatic tests are great. They make your goals clear, help with your
+development and are probably the cheapest way to do regression testing. I
+recommend automatic tests for almost every project, both unit tests and
+automated functional tests.
+
+Yet, one can waste enormous amounts of time by trying to make automation test
+everything, particularly with hard to test legacy systems. Problems are faced
+when attempting to test integration points like calls to external systems.
+Other issues surface when the underlying functionality is attempted to be tested with
+a massive number of simple tests which will all fail when merely one simple thing
+changes (the proper term is lack of equivalence partitioning).
+
+Kent Beck says in his book TDD that in one case he wrote four unit tests where a
+human professional tester wrote more than seventy manual tests. I believe that Beck
+didn't mean that a few unit tests will replace manual tests, but that unit tests
+exist for guiding the development and having simple, cheap tests ready to be run
+automatically. Refactoring especially becomes safer and easier with unit tests.
+
+However, manual testing can cover lots of functionality quite cheaply
+and its duration is usually constant or at least relatively easily estimated.
+Creating complex automation is very much like creating complex software in
+general, which is expensive, hard to estimate and requires non-trivial
+maintenance effort.
+
+Manual testing can also easily uncover some problems that are extremely hard to
+test for automatically, e.g. fonts and graphics that look ugly. The only problem
+with manual testing is that it needs to be done after each change.
+
+It is very hard to achieve excellent test automation, but it is relatively easy
+to get good test automation and good manual testing coverage.
+>>>>>>> Unknown things made years ago
 
 JUnit
 PHPUnit
 TDD
+Spolsky fonts
